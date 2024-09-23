@@ -1,18 +1,22 @@
 // MENU PERFIL USUARIO
+// Cuando se hace clic en el botón del perfil de usuario, se alterna la clase 'active' en su elemento padre.
 document
   .querySelector(".chat-sidebar-perfil-boton")
   .addEventListener("click", function (e) {
-    e.preventDefault();
-    this.parentElement.classList.toggle("active");
+    e.preventDefault(); // Previene el comportamiento predeterminado del botón.
+    this.parentElement.classList.toggle("active"); // Alterna la clase 'active' en el padre del botón.
   });
 
+// Detecta clics en cualquier lugar del documento. Si el clic no es dentro del perfil de usuario, se cierra el menú.
 document.addEventListener("click", function (e) {
   if (!e.target.matches(".chat-sidebar-perfil, .chat-sidebar-perfil *")) {
+    // Si el clic no es en el botón del perfil o dentro de sus hijos, remueve la clase 'active' del perfil.
     document.querySelector(".chat-sidebar-perfil").classList.remove("active");
   }
 });
 
 // CHAT CONVERSACIONES
+// Muestra u oculta el menú dropdown de cada mensaje de conversación al hacer clic en su botón toggle.
 document
   .querySelectorAll(".conversacion-item-dropdown-toggle")
   .forEach(function (item) {
@@ -31,6 +35,7 @@ document
     });
   });
 
+// Cierra todos los menús dropdown de los mensajes de conversación al hacer clic en cualquier lugar del documento.
 document.addEventListener("click", function (e) {
   if (
     !e.target.matches(
@@ -45,12 +50,14 @@ document.addEventListener("click", function (e) {
   }
 });
 
+// Cambia el número de filas de los campos de texto de los formularios de envío de mensajes en función del número de líneas de texto.
 document.querySelectorAll(".conversacion-form-input").forEach(function (item) {
   item.addEventListener("input", function () {
     this.rows = this.value.split("\n").length;
   });
 });
 
+// Muestra la conversación relacionada con el botón que se hace clic, ocultando las demás conversaciones.
 document.querySelectorAll("[data-conversacion]").forEach(function (item) {
   item.addEventListener("click", function (e) {
     e.preventDefault();
@@ -61,6 +68,7 @@ document.querySelectorAll("[data-conversacion]").forEach(function (item) {
   });
 });
 
+// Cierra la conversación actual al hacer clic en el botón de regreso.
 document.querySelectorAll(".conversacion-back").forEach(function (item) {
   item.addEventListener("click", function (e) {
     e.preventDefault();
@@ -70,21 +78,26 @@ document.querySelectorAll(".conversacion-back").forEach(function (item) {
 });
 
 // ADJUNTOS
-document
-  .querySelector(".conversacion-form-button")
-  .addEventListener("click", function (e) {
+// Seleccionamos todos los botones con la clase .conversacion-form-button
+const conversacionButtons = document.querySelectorAll(
+  ".conversacion-form-button"
+);
+
+conversacionButtons.forEach(function (button) {
+  // Añadimos el evento click a cada botón
+  button.addEventListener("click", function (e) {
     e.preventDefault();
     this.classList.toggle("active");
   });
+});
 
+// Evento global para detectar clics fuera de los botones y cerrar el menú
 document.addEventListener("click", function (e) {
-  if (
-    !e.target.matches(".conversacion-form-button, .conversacion-form-button *")
-  ) {
-    document
-      .querySelector(".conversacion-form-button")
-      .classList.remove("active");
-  }
+  conversacionButtons.forEach(function (button) {
+    if (!button.contains(e.target)) {
+      button.classList.remove("active");
+    }
+  });
 });
 
 // Seleccionamos todos los enlaces de las conversaciones
