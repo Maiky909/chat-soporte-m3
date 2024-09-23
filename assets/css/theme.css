@@ -319,6 +319,10 @@ body {
   font-weight: 500;
 }
 
+.content-mensajes-name.bold {
+  font-weight: bold;
+}
+
 /* ===== CHAT CONVERSACIONES ===== */
 
 .conversacion {

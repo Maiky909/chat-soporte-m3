@@ -86,3 +86,29 @@ document.addEventListener("click", function (e) {
       .classList.remove("active");
   }
 });
+
+// Seleccionamos todos los enlaces de las conversaciones
+const chats = document.querySelectorAll(".content-mensajes-list li a");
+
+chats.forEach((chat) => {
+  chat.addEventListener("click", function (event) {
+    // Evitar la acción predeterminada del enlace
+    event.preventDefault();
+
+    // Seleccionamos el nombre del chat y el número de mensajes no leídos
+    const nombre = this.querySelector(".content-mensajes-name");
+    const numeroMensajes = this.querySelector(".content-mensajes-numero");
+
+    // Si hay un número de mensajes, lo eliminamos y quitamos la negrita del nombre
+    if (numeroMensajes) {
+      numeroMensajes.style.display = "none"; // Ocultar el número de mensajes
+      nombre.classList.remove("bold"); // Quitar la clase que pone el nombre en negrita
+    }
+  });
+});
+
+// Al cargar la página, poner en negrita los nombres que tienen número de mensajes
+document.querySelectorAll(".content-mensajes-numero").forEach((num) => {
+  const nombre = num.closest("a").querySelector(".content-mensajes-name");
+  nombre.classList.add("bold");
+});
