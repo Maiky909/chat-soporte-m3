@@ -28,7 +28,7 @@
             <aside class="chat-sidebar d-flex flex-column">
 
                 <!-- LOGO  -->
-                <a href="#" class="chat-sidebar-logo text-center text-decoration-none d-block">
+                <a href="#" class="chat-sidebar-logo text-center text-decoration-none d-none d-md-block">
                     <i class="ri-wechat-2-fill"></i>
                     <span class="fs-6">HelpIT</span>
                 </a>
@@ -107,9 +107,11 @@
                 </ul>
             </aside>
 
-            <!-- LISTADO DE CHATS CONTACTOS -->
+            <!-- CHAT  -->
             <div class="chat-content">
-                <div class="content-sidebar d-flex flex-column">
+
+                <!-- LISTADO DE CHATS CONTACTOS -->
+                <section class="content-sidebar d-flex flex-column">
                     <div class="content-sidebar-title">Chats</div>
                     <form action="" class="content-sidebar-form">
                         <input type="search" class="content-sidebar-input" placeholder="buscar chat...">
@@ -121,11 +123,11 @@
                                 <span>Conversaciones Recientes </span>
                             </li>
                             <li>
-                                <a href="#" data-conversation="#conversation-1">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                <a href="#" data-conversacion="#conversacion-1">
+                                    <img class="content-mensajes-image" src="assets/img/perfil/leon.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
-                                        <span class="content-mensajes-name">Chat 1</span>
+                                        <span class="content-mensajes-name">Leonardo</span>
                                         <span class="content-mensajes-text">Es posible que sea actualización?</span>
                                     </span>
                                     <span class="content-mensajes-detalle">
@@ -135,11 +137,11 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" data-conversation="#conversation-2">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                <a href="#" data-conversacion="#conversacion-2">
+                                    <img class="content-mensajes-image" src="assets/img/perfil/perro.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
-                                        <span class="content-mensajes-name">Chat 2</span>
+                                        <span class="content-mensajes-name">Perricio</span>
                                         <span class="content-mensajes-text">Intente de nuevo, pero no me funciona
                                             😒</span>
                                     </span>
@@ -150,11 +152,11 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                <a href="#" data-conversacion="#conversacion-3">
+                                    <img class="content-mensajes-image" src="assets/img/perfil/pajaro.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
-                                        <span class="content-mensajes-name">Chat 3</span>
+                                        <span class="content-mensajes-name">Pajarencio</span>
                                         <span class="content-mensajes-text">Ahi se arregló gracias!</span>
                                     </span>
                                     <span class="content-mensajes-detalle">
@@ -165,10 +167,10 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                    <img class="content-mensajes-image" src="assets/img/perfil/koala.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
-                                        <span class="content-mensajes-name">Chat 4</span>
+                                        <span class="content-mensajes-name">koalberto</span>
                                         <span class="content-mensajes-text">Lorem ipsum dolor sit amet
                                             consectetur.</span>
                                     </span>
@@ -181,10 +183,10 @@
                             <!-- CHAT GENERICO  -->
                             <li>
                                 <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                    <img class="content-mensajes-image" src="assets/img/perfil/reptil.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
-                                        <span class="content-mensajes-name">Chat 5</span>
+                                        <span class="content-mensajes-name">Reptilianio</span>
                                         <span class="content-mensajes-text">Lorem ipsum dolor sit amet
                                             consectetur.</span>
                                     </span>
@@ -196,7 +198,7 @@
 
                             <li>
                                 <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                    <img class="content-mensajes-image" src="assets/img/perfil/elefante.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
                                         <span class="content-mensajes-name">Chat 6</span>
@@ -211,7 +213,7 @@
 
                             <li>
                                 <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                    <img class="content-mensajes-image" src="assets/img/perfil/elefante.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
                                         <span class="content-mensajes-name">Chat 7</span>
@@ -226,7 +228,7 @@
 
                             <li>
                                 <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                    <img class="content-mensajes-image" src="assets/img/perfil/elefante.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
                                         <span class="content-mensajes-name">Chat 8</span>
@@ -241,7 +243,7 @@
 
                             <li>
                                 <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                    <img class="content-mensajes-image" src="assets/img/perfil/elefante.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
                                         <span class="content-mensajes-name">Chat 9</span>
@@ -256,7 +258,7 @@
 
                             <li>
                                 <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                    <img class="content-mensajes-image" src="assets/img/perfil/elefante.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
                                         <span class="content-mensajes-name">Chat 10</span>
@@ -271,7 +273,7 @@
 
                             <li>
                                 <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                    <img class="content-mensajes-image" src="assets/img/perfil/elefante.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
                                         <span class="content-mensajes-name">Chat 11</span>
@@ -286,7 +288,7 @@
 
                             <li>
                                 <a href="#">
-                                    <img class="content-mensajes-image" src="assets/img/perfil/panda.jpg"
+                                    <img class="content-mensajes-image" src="assets/img/perfil/elefante.jpg"
                                         alt="foto-chat">
                                     <span class="content-mensajes-info">
                                         <span class="content-mensajes-name">Chat 12</span>
@@ -301,8 +303,834 @@
 
                         </ul>
                     </div>
-                </div>
+                </section>
+
+                <!-- CONTENIDO DEL CHAT -->
+                <section class="conversacion conversacion-default active">
+                    <i class="ri-wechat-2-line"></i>
+                    <span>HelpIT</span>
+                    <p>Selecciona un chat para ver la conversación reciente 😉</p>
+                    <p>Recuerda NO compartir información privada con otras personas fuera de la organización.</p>
+                </section>
+
+                <!-- CONVERSACIONES DE CHAT -->
+                <section class="conversacion conversacion-fondo" id="conversacion-1">
+                    <div class="conversacion-top">
+                        <button type="button" class="conversacion-back"><i class="ri-arrow-left-line"></i></button>
+                        <div class="conversacion-user">
+                            <img class="conversacion-user-image" src="assets/img/perfil/leon.jpg" alt="foto-perfil">
+                            <div>
+                                <div class="conversacion-user-name">Leonardo</div>
+                                <div class="conversacion-user-status online">En Linea</div>
+                            </div>
+                        </div>
+                        <div class="conversacion-buttons">
+                            <button type="button"><i class="ri-phone-fill"></i></button>
+                            <button type="button"><i class="ri-vidicon-line"></i></button>
+                            <button type="button"><i class="ri-information-line"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="conversacion-main">
+                        <ul class="conversacion-wrapper">
+                            <div class="coversation-divider"><span>Hoy</span></div>
+                            <li class="conversacion-item me">
+                                <div class="conversacion-item-side">
+                                    <img class="conversacion-item-image" src="assets/img/perfil/leon.jpg"
+                                        alt="foto-perfil">>
+                                </div>
+                                <div class="conversacion-item-content">
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet natus
+                                                    repudiandae quisquam sequi nobis suscipit consequatur rerum alias
+                                                    odio repellat!</p>
+                                                <div class="conversacion-item-time">17:20</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                                                    tenetur!</p>
+                                                <div class="conversacion-item-time">17:20</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="conversacion-item">
+                                <div class="conversacion-item-side">
+                                    <img class="conversacion-item-image" src="assets/img/perfil/panda.jpg"
+                                        alt="foto-perfil">
+                                </div>
+                                <div class="conversacion-item-content">
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <div class="conversacion-item-time">17:20</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-share-forward-line"></i> Reenviar</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ri-delete-bin-line"></i> Eliminar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos
+                                                    ab in?</p>
+                                                <div class="conversacion-item-time">17:20</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-share-forward-line"></i> Reenviar</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ri-delete-bin-line"></i> Eliminar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                                                    debitis. Iste natus est aliquam ipsum doloremque fugiat, quidem eos
+                                                    autem? Dolor quisquam laboriosam enim cum laborum suscipit
+                                                    perferendis adipisci praesentium.</p>
+                                                <div class="conversacion-item-time">17:20</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-share-forward-line"></i> Reenviar</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ri-delete-bin-line"></i> Eliminar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="conversacion-item me">
+                                <div class="conversacion-item-side">
+                                    <img class="conversacion-item-image" src="assets/img/perfil/leon.jpg"
+                                        alt="foto-perfil">>
+                                </div>
+                                <div class="conversacion-item-content">
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, eos,
+                                                    magni temporibus, placeat consectetur nobis incidunt dicta a culpa
+                                                    vel esse. Facilis fugiat possimus eveniet accusamus dignissimos
+                                                    pariatur inventore animi rem vero, eligendi obcaecati fugit quaerat?
+                                                    Officia ex quod eaque maxime ipsam, tempore error laboriosam
+                                                    laborum, magnam ipsum doloremque quas.</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                                                    debitis odio maiores perferendis ipsa repudiandae amet blanditiis
+                                                    quod. Ullam, dolorum.</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    blanditiis ea, voluptatum, eveniet at harum minima maxime enim aut
+                                                    non, iure expedita excepturi tempore nostrum quasi natus voluptas
+                                                    dolore ducimus!</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    blanditiis ea, voluptatum, eveniet at harum minima maxime enim aut
+                                                    non, iure expedita excepturi tempore nostrum quasi natus voluptas
+                                                    dolore ducimus!</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    blanditiis ea, voluptatum, eveniet at harum minima maxime enim aut
+                                                    non, iure expedita excepturi tempore nostrum quasi natus voluptas
+                                                    dolore ducimus!</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    blanditiis ea, voluptatum, eveniet at harum minima maxime enim aut
+                                                    non, iure expedita excepturi tempore nostrum quasi natus voluptas
+                                                    dolore ducimus!</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    blanditiis ea, voluptatum, eveniet at harum minima maxime enim aut
+                                                    non, iure expedita excepturi tempore nostrum quasi natus voluptas
+                                                    dolore ducimus!</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    blanditiis ea, voluptatum, eveniet at harum minima maxime enim aut
+                                                    non, iure expedita excepturi tempore nostrum quasi natus voluptas
+                                                    dolore ducimus!</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    blanditiis ea, voluptatum, eveniet at harum minima maxime enim aut
+                                                    non, iure expedita excepturi tempore nostrum quasi natus voluptas
+                                                    dolore ducimus!</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Es posible que sea alguna actualización que me este dejando la ca...
+                                                    en el pc, yo soy muy malo actualizando el windous o como se escriba
+                                                    🤷‍♂️</p>
+                                                <div class="conversacion-item-time">17:30</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="conversacion-form">
+                        <button type="button" class="conversacion-form-button">
+                            <i class="ri-attachment-line"></i>
+                        </button>
+
+                        <ul class="conversacion-form-button-dropdown">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-file-image-line"></i> Imagenes
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="ri-file-video-line"></i> Videos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="ri-file-upload-line"></i> Documentos
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="conversacion-form-group">
+                            <textarea class="conversacion-form-input" rows="1"
+                                placeholder="Escribir mensaje..."></textarea>
+                            <button type="button" class="conversacion-form-audio"><i class="ri-mic-line"></i></button>
+                        </div>
+                        <button type="button" class="conversacion-form-button conversacion-form-submit"><i
+                                class="ri-send-plane-2-line"></i></button>
+                    </div>
+
+                </section>
+
+                <section class="conversacion conversacion-fondo" id="conversacion-2">
+                    <div class="conversacion-top">
+                        <button type="button" class="conversacion-back"><i class="ri-arrow-left-line"></i></button>
+                        <div class="conversacion-user">
+                            <img class="conversacion-user-image" src="assets/img/perfil/perro.jpg" alt="foto-perfil">
+                            <div>
+                                <div class="conversacion-user-name">Perricio</div>
+                                <div class="conversacion-user-status ausente">Ultima conexion hace 30 min</div>
+                            </div>
+                        </div>
+                        <div class="conversacion-buttons">
+                            <button type="button"><i class="ri-phone-fill"></i></button>
+                            <button type="button"><i class="ri-vidicon-line"></i></button>
+                            <button type="button"><i class="ri-information-line"></i></button>
+                        </div>
+                    </div>
+                    <div class="conversacion-main">
+                        <ul class="conversacion-wrapper">
+                            <div class="coversation-divider"><span>Today</span></div>
+                            <li class="conversacion-item me">
+                                <div class="conversacion-item-side">
+                                    <img class="conversacion-item-image" src="assets/img/perfil/perro.jpg"
+                                        alt="foto-perfil">
+                                </div>
+                                <div class="conversacion-item-content">
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet natus
+                                                    repudiandae quisquam sequi nobis suscipit consequatur rerum alias
+                                                    odio repellat!</p>
+                                                <div class="conversacion-item-time">16:50</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                                                    tenetur!</p>
+                                                <div class="conversacion-item-time">16:50</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="conversacion-item">
+                                <div class="conversacion-item-side">
+                                    <img class="conversacion-item-image" src="assets/img/perfil/panda.jpg"
+                                        alt="foto-perfil">
+                                </div>
+                                <div class="conversacion-item-content">
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <div class="conversacion-item-time">16:50</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-share-forward-line"></i> Reenviar</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ri-delete-bin-line"></i> Eliminar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos
+                                                    ab in?</p>
+                                                <div class="conversacion-item-time">16:50</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-share-forward-line"></i> Reenviar</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ri-delete-bin-line"></i> Eliminar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                                                    debitis. Iste natus est aliquam ipsum doloremque fugiat, quidem eos
+                                                    autem? Dolor quisquam laboriosam enim cum laborum suscipit
+                                                    perferendis adipisci praesentium.</p>
+                                                <div class="conversacion-item-time">16:50</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-share-forward-line"></i> Reenviar</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ri-delete-bin-line"></i> Eliminar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conversacion-item me">
+                                <div class="conversacion-item-side">
+                                    <img class="conversacion-item-image" src="assets/img/perfil/perro.jpg"
+                                        alt="foto-perfil">
+                                </div>
+                                <div class="conversacion-item-content">
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, eos,
+                                                    magni temporibus, placeat consectetur nobis incidunt dicta a culpa
+                                                    vel esse. Facilis fugiat possimus eveniet accusamus dignissimos
+                                                    pariatur inventore animi rem vero, eligendi obcaecati fugit quaerat?
+                                                    Officia ex quod eaque maxime ipsam, tempore error laboriosam
+                                                    laborum, magnam ipsum doloremque quas.</p>
+                                                <div class="conversacion-item-time">17:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                                                    debitis odio maiores perferendis ipsa repudiandae amet blanditiis
+                                                    quod. Ullam, dolorum.</p>
+                                                <div class="conversacion-item-time">17:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    blanditiis ea, voluptatum, eveniet at harum minima maxime enim aut
+                                                    non, iure expedita excepturi tempore nostrum quasi natus voluptas
+                                                    dolore ducimus!</p>
+                                                <div class="conversacion-item-time">17:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    blanditiis ea, voluptatum, eveniet at harum minima maxime enim aut
+                                                    non, iure expedita excepturi tempore nostrum quasi natus voluptas
+                                                    dolore ducimus!</p>
+                                                <div class="conversacion-item-time">17:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Intente de nuevo pero sigue saliendo el mismo error 🥲</p>
+                                                <div class="conversacion-item-time">17:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="conversacion-form">
+                        <button type="button" class="conversacion-form-button">
+                            <i class="ri-attachment-line"></i>
+                        </button>
+
+                        <ul class="conversacion-form-button-dropdown">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-file-image-line"></i> Imagenes
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="ri-file-video-line"></i> Videos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="ri-file-upload-line"></i> Documentos
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="conversacion-form-group">
+                            <textarea class="conversacion-form-input" rows="1"
+                                placeholder="Escribir mensaje..."></textarea>
+                            <button type="button" class="conversacion-form-audio"><i class="ri-mic-line"></i></button>
+                        </div>
+                        <button type="button" class="conversacion-form-button conversacion-form-submit"><i
+                                class="ri-send-plane-2-line"></i></button>
+                    </div>
+                </section>
+
+                <section class="conversacion conversacion-fondo" id="conversacion-3">
+                    <div class="conversacion-top">
+                        <button type="button" class="conversacion-back"><i class="ri-arrow-left-line"></i></button>
+                        <div class="conversacion-user">
+                            <img class="conversacion-user-image" src="assets/img/perfil/pajaro.jpg" alt="foto-perfil">
+                            <div>
+                                <div class="conversacion-user-name">Pajarencio</div>
+                                <div class="conversacion-user-status ausente">Ultima conexion hace 2 horas</div>
+                            </div>
+                        </div>
+                        <div class="conversacion-buttons">
+                            <button type="button"><i class="ri-phone-fill"></i></button>
+                            <button type="button"><i class="ri-vidicon-line"></i></button>
+                            <button type="button"><i class="ri-information-line"></i></button>
+                        </div>
+                    </div>
+                    <div class="conversacion-main">
+                        <ul class="conversacion-wrapper">
+                            <div class="coversation-divider"><span>Today</span></div>
+                            <li class="conversacion-item me">
+                                <div class="conversacion-item-side">
+                                    <img class="conversacion-item-image" src="assets/img/perfil/pajaro.jpg"
+                                        alt="foto-perfil">
+                                </div>
+                                <div class="conversacion-item-content">
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet natus
+                                                    repudiandae quisquam sequi nobis suscipit consequatur rerum alias
+                                                    odio repellat!</p>
+                                                <div class="conversacion-item-time">16:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                                                    tenetur!</p>
+                                                <div class="conversacion-item-time">16:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="conversacion-item">
+                                <div class="conversacion-item-side">
+                                    <img class="conversacion-item-image" src="assets/img/perfil/panda.jpg"
+                                        alt="foto-perfil">
+                                </div>
+                                <div class="conversacion-item-content">
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <div class="conversacion-item-time">16:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-share-forward-line"></i> Reenviar</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ri-delete-bin-line"></i> Eliminar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos
+                                                    ab in?</p>
+                                                <div class="conversacion-item-time">16:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-share-forward-line"></i> Reenviar</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ri-delete-bin-line"></i> Eliminar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                                                    debitis. Iste natus est aliquam ipsum doloremque fugiat, quidem eos
+                                                    autem? Dolor quisquam laboriosam enim cum laborum suscipit
+                                                    perferendis adipisci praesentium.</p>
+                                                <div class="conversacion-item-time">16:00</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-share-forward-line"></i> Reenviar</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ri-delete-bin-line"></i> Eliminar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="conversacion-item me">
+                                <div class="conversacion-item-side">
+                                    <img class="conversacion-item-image" src="assets/img/perfil/pajaro.jpg"
+                                        alt="foto-perfil">
+                                </div>
+                                <div class="conversacion-item-content">
+                                    <div class="conversacion-item-mensaje">
+                                        <div class="conversacion-item-box">
+                                            <div class="conversacion-item-text">
+                                                <p>Ahí se arregló gracias por tu ayuda!</p>
+                                                <div class="conversacion-item-time">16:45</div>
+                                            </div>
+                                            <div class="conversacion-item-dropdown">
+                                                <button type="button" class="conversacion-item-dropdown-toggle"><i
+                                                        class="ri-more-2-line"></i></button>
+                                                <ul class="conversacion-item-dropdown-list">
+                                                    <li><a href="#"><i class="ri-reply-line"></i> Responder</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="conversacion-form">
+                        <button type="button" class="conversacion-form-button">
+                            <i class="ri-attachment-line"></i>
+                        </button>
+
+                        <ul class="conversacion-form-button-dropdown">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-file-image-line"></i> Imagenes
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="ri-file-video-line"></i> Videos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="ri-file-upload-line"></i> Documentos
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="conversacion-form-group">
+                            <textarea class="conversacion-form-input" rows="1"
+                                placeholder="Escribir mensaje..."></textarea>
+                            <button type="button" class="conversacion-form-audio"><i class="ri-mic-line"></i></button>
+                        </div>
+                        <button type="button" class="conversacion-form-button conversacion-form-submit"><i
+                                class="ri-send-plane-2-line"></i></button>
+                    </div>
+                </section>
+
+
             </div>
+        </div>
 
         </div>
     </main>
