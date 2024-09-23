@@ -333,7 +333,7 @@ body {
   border-radius: 20px;
 }
 .conversacion-fondo {
-  background-image: url("https://img.freepik.com/premium-vector/social-networks-dating-apps-vector-seamless-pattern_341076-469.jpg");
+  background-image: url("https://t3.ftcdn.net/jpg/01/99/79/88/360_F_199798806_PAFfWGapie6Mk8igqKHbhIIa9LwQcvQr.jpg");
   background-size: auto;
   background-position: center;
 }
@@ -346,6 +346,7 @@ body {
   background-color: #fff;
   display: flex;
   align-items: center;
+  border-radius: 20px;
 }
 .conversacion-back {
   background-color: transparent;
@@ -621,6 +622,7 @@ body {
   display: flex;
   align-items: flex-end;
   position: relative;
+  border-radius: 20px;
 }
 .conversacion-form-group {
   width: 100%;
@@ -707,6 +709,11 @@ body {
 }
 .conversacion-default p {
   margin-top: 16px;
+}
+.footer-texto {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px !important;
 }
 
 .conversacion-form-button-dropdown {
@@ -833,5 +840,11 @@ body {
   .conversacion-default.active {
     display: none !important;
     padding: 16px;
+  }
+  .conversacion-top {
+    border-radius: 0px;
+  }
+  .conversacion-form {
+    border-radius: 0px;
   }
 }
